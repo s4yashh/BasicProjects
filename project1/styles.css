@@ -535,6 +535,8 @@ body {
     .share-btn {
         width: 100%;
     }
+}
+
 /* Large Desktop Styles (1400px and above) */
 @media screen and (min-width: 1400px) {
     .container {
@@ -544,7 +546,5 @@ body {
     
     .post-title {
         font-size: 2.5rem;
-    }
-}       font-size: 2.5rem;
     }
 }

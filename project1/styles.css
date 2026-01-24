@@ -34,9 +34,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 /* ========================================
@@ -55,6 +55,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
+    padding: 0 2rem;
 }
 
 .logo h1 {
@@ -533,15 +535,16 @@ body {
     .share-btn {
         width: 100%;
     }
-}
-
 /* Large Desktop Styles (1400px and above) */
 @media screen and (min-width: 1400px) {
     .container {
-        max-width: 1400px;
+        max-width: 100%;
+        padding: 0 3rem;
     }
     
     .post-title {
         font-size: 2.5rem;
+    }
+}       font-size: 2.5rem;
     }
 }

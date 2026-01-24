@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Countdown Timer - Set multiple timers and count down to your important events">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Countdown Timer</h1>
+            <p class="subtitle">Set your target date and watch the countdown begin!</p>
+        </header>
+
+        <section class="timer-creator">
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="timerName">Timer Name</label>
+                    <input type="text" id="timerName" placeholder="e.g., New Year 2027" maxlength="50">
+                </div>
+                
+                <div class="input-field">
+                    <label for="targetDate">Target Date</label>
+                    <input type="date" id="targetDate">
+                </div>
+                
+                <div class="input-field">
+                    <label for="targetTime">Target Time</label>
+                    <input type="time" id="targetTime" value="00:00">
+                </div>
+            </div>
+            
+            <button class="btn-start" id="startBtn">Start Countdown</button>
+        </section>
+
+        <section class="timers-container" id="timersContainer">
+        </section>
+    </div>
+
+    <div class="celebration-modal" id="celebrationModal">
+        <div class="modal-content">
+            <div class="confetti-container">
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+            <h2 class="celebration-title">Time's Up!</h2>
+            <p class="celebration-message" id="celebrationMessage"></p>
+            <button class="btn-close" id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <audio id="celebrationSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFAw9k9n0xnMpBSuAze/bjDkHGGS56+aXShAN" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

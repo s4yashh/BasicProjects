@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Image Slider with automatic slideshow and smooth transitions">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Image Slider</h1>
+            <p class="subtitle">Discover beautiful places around the world</p>
+        </header>
+
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+
+                <div class="slider">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=700&fit=crop" 
+                         alt="Mountain landscape with lake" 
+                         class="slide active"
+                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=700&fit=crop" 
+                         alt="Forest path in nature" 
+                         class="slide"
+                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=700&fit=crop" 
+                         alt="Tropical beach paradise" 
+                         class="slide"
+                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=700&fit=crop" 
+                         alt="Rolling hills landscape" 
+                         class="slide"
+                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=1200&h=700&fit=crop" 
+                         alt="Desert landscape with rocks" 
+                         class="slide"
+                         loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&h=700&fit=crop" 
+                         alt="Misty mountain valley" 
+                         class="slide"
+                         loading="lazy">
+                </div>
+
+                <button class="nav-btn next-btn" id="nextBtn" aria-label="Next image">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+
+                <div class="slide-counter">
+                    <span id="currentSlide">1</span> / <span id="totalSlides">6</span>
+                </div>
+            </div>
+
+            <div class="dots-container" id="dotsContainer"></div>
+
+            <div class="controls">
+                <button class="control-btn" id="playPauseBtn">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 4h4v16H6zM14 4h4v16h-4z"/>
+                    </svg>
+                    <span id="playPauseText">Play</span>
+                </button>
+
+                <div class="speed-control">
+                    <label for="speedRange">Speed:</label>
+                    <input type="range" id="speedRange" min="1000" max="5000" value="3000" step="500">
+                    <span id="speedValue">3s</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnails-container" id="thumbnailsContainer">
+            <div class="thumbnail active" data-index="0">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150&h=100&fit=crop" alt="Thumbnail 1">
+            </div>
+            <div class="thumbnail" data-index="1">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=150&h=100&fit=crop" alt="Thumbnail 2">
+            </div>
+            <div class="thumbnail" data-index="2">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150&h=100&fit=crop" alt="Thumbnail 3">
+            </div>
+            <div class="thumbnail" data-index="3">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=150&h=100&fit=crop" alt="Thumbnail 4">
+            </div>
+            <div class="thumbnail" data-index="4">
+                <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=150&h=100&fit=crop" alt="Thumbnail 5">
+            </div>
+            <div class="thumbnail" data-index="5">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=150&h=100&fit=crop" alt="Thumbnail 6">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

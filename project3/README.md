@@ -435,6 +435,101 @@ This project demonstrates:
 - User control interfaces
 - Accessibility best practices
 
+## 🌐 Deploy to Vercel
+
+### Option 1: Deploy via Vercel CLI
+
+1. **Install Vercel CLI** (if not already installed):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Navigate to project folder**:
+   ```bash
+   cd project3
+   ```
+
+3. **Deploy**:
+   ```bash
+   vercel
+   ```
+
+4. **Follow the prompts**:
+   - Log in to your Vercel account
+   - Confirm project settings
+   - Get your live URL!
+
+### Option 2: Deploy via Vercel Dashboard
+
+1. **Visit** [vercel.com](https://vercel.com) and sign in
+2. **Click** "Add New" → "Project"
+3. **Import** your GitHub repository (or upload the project3 folder)
+4. **Configure**:
+   - Project Name: `image-slider-carousel`
+   - Framework Preset: Other
+   - Root Directory: `project3`
+5. **Click** "Deploy"
+6. **Done!** Your site will be live at `your-project.vercel.app`
+
+### Option 3: Deploy via GitHub Integration
+
+1. **Push your code** to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: prepare image slider for deployment"
+   git push origin main
+   ```
+
+2. **Connect to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Import Project"
+   - Select your GitHub repository
+   - Choose `project3` as root directory
+
+3. **Automatic Deployments**:
+   - Every push to main branch auto-deploys
+   - Preview deployments for pull requests
+   - Instant rollbacks available
+
+### Vercel Configuration
+
+The `vercel.json` file is already configured:
+```json
+{
+  "version": 2,
+  "name": "image-slider-carousel",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
+```
+
+### Custom Domain (Optional)
+
+1. Go to your project settings on Vercel
+2. Navigate to "Domains"
+3. Add your custom domain
+4. Update DNS records as instructed
+5. SSL certificate is automatically provisioned
+
+### Performance Tips for Deployment
+
+- ✅ Images are already lazy-loaded
+- ✅ CSS and JS are minified (optional)
+- ✅ Vercel automatically optimizes static assets
+- ✅ CDN distribution included
+
+### Deployment Checklist
+
+- ✅ All files committed to git
+- ✅ Images accessible (Unsplash URLs or local)
+- ✅ vercel.json configuration present
+- ✅ Test all navigation methods
+- ✅ Test responsive design
+
 ## 🚀 Future Enhancements
 
 Potential additions:

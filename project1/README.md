@@ -249,6 +249,101 @@ This project demonstrates:
 - Search algorithm implementation
 - XSS prevention techniques
 
+## 🌐 Deploy to Vercel
+
+### Option 1: Deploy via Vercel CLI
+
+1. **Install Vercel CLI** (if not already installed):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Navigate to project folder**:
+   ```bash
+   cd project1
+   ```
+
+3. **Deploy**:
+   ```bash
+   vercel
+   ```
+
+4. **Follow the prompts**:
+   - Log in to your Vercel account
+   - Confirm project settings
+   - Get your live URL!
+
+### Option 2: Deploy via Vercel Dashboard
+
+1. **Visit** [vercel.com](https://vercel.com) and sign in
+2. **Click** "Add New" → "Project"
+3. **Import** your GitHub repository (or upload the project1 folder)
+4. **Configure**:
+   - Project Name: `tech-insights-blog`
+   - Framework Preset: Other
+   - Root Directory: `project1`
+5. **Click** "Deploy"
+6. **Done!** Your site will be live at `your-project.vercel.app`
+
+### Option 3: Deploy via GitHub Integration
+
+1. **Push your code** to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: prepare blog for deployment"
+   git push origin main
+   ```
+
+2. **Connect to Vercel**:
+   - Go to [vercel.com](https://vercel.com)
+   - Click "Import Project"
+   - Select your GitHub repository
+   - Choose `project1` as root directory
+
+3. **Automatic Deployments**:
+   - Every push to main branch auto-deploys
+   - Preview deployments for pull requests
+   - Instant rollbacks available
+
+### Vercel Configuration
+
+The `vercel.json` file is already configured:
+```json
+{
+  "version": 2,
+  "name": "tech-insights-blog",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
+```
+
+### Custom Domain (Optional)
+
+1. Go to your project settings on Vercel
+2. Navigate to "Domains"
+3. Add your custom domain
+4. Update DNS records as instructed
+5. SSL certificate is automatically provisioned
+
+### Environment Variables
+
+If you need to add environment variables:
+1. Go to Project Settings → Environment Variables
+2. Add your variables
+3. Redeploy the project
+
+### Deployment Checklist
+
+- ✅ All files committed to git
+- ✅ Images and assets included
+- ✅ vercel.json configuration present
+- ✅ No hardcoded sensitive data
+- ✅ Test locally before deploying
+
 ## 🚀 Future Enhancements
 
 Potential additions:

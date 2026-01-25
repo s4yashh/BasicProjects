@@ -198,9 +198,90 @@ Error messages appear in real-time as users type.
 2. Site will be deployed automatically
 3. Get a custom domain or use provided Netlify URL
 
+### Vercel (Recommended)
+
+#### Option 1: Deploy via Vercel CLI
+
+1. **Install Vercel CLI**:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Navigate to project folder**:
+   ```bash
+   cd project4
+   ```
+
+3. **Deploy**:
+   ```bash
+   vercel
+   ```
+
+4. **Follow the prompts** and get your live URL!
+
+#### Option 2: Deploy via Vercel Dashboard
+
+1. **Visit** [vercel.com](https://vercel.com) and sign in
+2. **Click** "Add New" → "Project"
+3. **Import** your GitHub repository (or upload the project4 folder)
+4. **Configure**:
+   - Project Name: `personal-portfolio`
+   - Framework Preset: Other
+   - Root Directory: `project4`
+5. **Click** "Deploy"
+6. **Your portfolio** will be live at `your-username.vercel.app`
+
+#### Option 3: GitHub Integration
+
+1. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "feat: prepare portfolio for deployment"
+   git push origin main
+   ```
+
+2. **Connect to Vercel**:
+   - Import your GitHub repository
+   - Select `project4` as root directory
+   - Automatic deployments on every push
+
+### Vercel Configuration
+
+The `vercel.json` file is already configured:
+```json
+{
+  "version": 2,
+  "name": "personal-portfolio",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
+```
+
+### Custom Domain Setup
+
+1. Go to Project Settings → Domains
+2. Add your custom domain (e.g., `yourname.com`)
+3. Update DNS records as instructed
+4. SSL automatically provisioned
+
+### Pre-Deployment Checklist
+
+- ✅ Replace profile image with your photo
+- ✅ Add your actual resume PDF
+- ✅ Update all personal information
+- ✅ Replace placeholder projects with real ones
+- ✅ Update social media links
+- ✅ Test all links and forms
+- ✅ Test responsive design
+- ✅ Check all images load properly
+
 ### Web Hosting
 
-Upload all files to your web hosting provider via FTP or file manager.
+Alternatively, upload all files to your web hosting provider via FTP or file manager.
 
 ## Future Enhancements
 

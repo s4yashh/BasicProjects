@@ -5,6 +5,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 ## Features
 
 ### 🏠 Home Page
+
 - Eye-catching hero section with animated profile image
 - Brief introduction and professional tagline
 - Social media links (GitHub, LinkedIn, Twitter)
@@ -12,6 +13,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 - Call-to-action buttons
 
 ### 👤 About Section
+
 - Detailed professional bio
 - Education and work experience timeline
 - Hobbies and interests
@@ -19,6 +21,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 - Downloadable resume (PDF format)
 
 ### 💼 Projects Section
+
 - Responsive project gallery with 6 featured projects
 - Hover effects with overlay and "View Details" button
 - Project modal with detailed information:
@@ -29,6 +32,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 - Technology tags for quick reference
 
 ### 📧 Contact Section
+
 - Fully functional contact form with JavaScript validation
 - Real-time field validation
 - Required fields: Name, Email, Subject, Message
@@ -39,6 +43,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 - Social media integration
 
 ### ✨ Interactive Features
+
 - Smooth scrolling between sections
 - Active navigation highlighting based on scroll position
 - Mobile-responsive hamburger menu
@@ -50,7 +55,7 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 ## Technologies Used
 
 - **HTML5**: Semantic markup and structure
-- **CSS3**: 
+- **CSS3**:
   - Custom properties (CSS variables)
   - Flexbox and Grid layouts
   - Animations and transitions
@@ -106,34 +111,40 @@ project4/
 ### Customization
 
 #### Colors and Styling
+
 Edit the CSS variables in `styles.css`:
+
 ```css
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --accent-color: #f59e0b;
-    /* Modify other colors as needed */
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #f59e0b;
+  /* Modify other colors as needed */
 }
 ```
 
 #### Projects
+
 Update project details in `script.js`:
+
 ```javascript
 const projectDetails = {
-    '1': {
-        title: 'Your Project Name',
-        description: 'Project description...',
-        features: ['Feature 1', 'Feature 2'],
-        technologies: ['Tech 1', 'Tech 2'],
-        github: 'your-github-link',
-        demo: 'your-demo-link'
-    }
-    // Add more projects...
-}
+  1: {
+    title: "Your Project Name",
+    description: "Project description...",
+    features: ["Feature 1", "Feature 2"],
+    technologies: ["Tech 1", "Tech 2"],
+    github: "your-github-link",
+    demo: "your-demo-link",
+  },
+  // Add more projects...
+};
 ```
 
 #### Contact Form
+
 The contact form currently saves submissions to localStorage. To connect it to a backend:
+
 1. Modify the `saveContactMessage()` function in `script.js`
 2. Add AJAX/Fetch API call to your backend endpoint
 3. Replace localStorage with actual email service integration
@@ -156,6 +167,7 @@ The contact form currently saves submissions to localStorage. To connect it to a
 ## Form Validation
 
 The contact form includes comprehensive validation:
+
 - **Name**: Minimum 2 characters
 - **Email**: Valid email format (example@domain.com)
 - **Subject**: Minimum 5 characters
@@ -174,17 +186,20 @@ Error messages appear in real-time as users type.
 ## Deployment
 
 ### GitHub Pages
+
 1. Upload all files to a GitHub repository
 2. Go to repository Settings > Pages
 3. Select main branch as source
 4. Your site will be live at `https://username.github.io/repository-name`
 
 ### Netlify
+
 1. Drag and drop the project folder to Netlify
 2. Site will be deployed automatically
 3. Get a custom domain or use provided Netlify URL
 
 ### Web Hosting
+
 Upload all files to your web hosting provider via FTP or file manager.
 
 ## Future Enhancements
@@ -212,6 +227,7 @@ This project is open source and available for personal and commercial use.
 ## Contact
 
 For questions or suggestions about this portfolio template:
+
 - Email: suyash.singh@example.com
 - GitHub: [Your GitHub Profile]
 - LinkedIn: [Your LinkedIn Profile]

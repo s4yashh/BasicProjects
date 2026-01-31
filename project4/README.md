@@ -203,16 +203,19 @@ Error messages appear in real-time as users type.
 #### Option 1: Deploy via Vercel CLI
 
 1. **Install Vercel CLI**:
+
    ```bash
    npm install -g vercel
    ```
 
 2. **Navigate to project folder**:
+
    ```bash
    cd project4
    ```
 
 3. **Deploy**:
+
    ```bash
    vercel
    ```
@@ -234,6 +237,7 @@ Error messages appear in real-time as users type.
 #### Option 3: GitHub Integration
 
 1. **Push to GitHub**:
+
    ```bash
    git add .
    git commit -m "feat: prepare portfolio for deployment"
@@ -248,6 +252,7 @@ Error messages appear in real-time as users type.
 ### Vercel Configuration
 
 The `vercel.json` file is already configured:
+
 ```json
 {
   "version": 2,

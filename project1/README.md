@@ -5,6 +5,7 @@ A modern, fully-responsive blog website built with HTML, CSS, and JavaScript. Fe
 ## 🚀 Features
 
 ### Core Functionality
+
 - **3 Featured Blog Posts**: Web Development, JavaScript, and CSS topics
 - **Navigation Menu**: Smooth scrolling navigation with active link highlighting
 - **Search Functionality**: Real-time search across blog posts with keyword matching
@@ -14,6 +15,7 @@ A modern, fully-responsive blog website built with HTML, CSS, and JavaScript. Fe
 - **Mobile Menu**: Hamburger menu for mobile navigation
 
 ### Blog Posts Included
+
 1. **"Getting Started with Web Development"** - Comprehensive guide for beginners
 2. **"Mastering JavaScript in 2024"** - Modern JavaScript features and best practices
 3. **"The Art of CSS Design"** - Advanced CSS techniques and animations
@@ -21,11 +23,13 @@ A modern, fully-responsive blog website built with HTML, CSS, and JavaScript. Fe
 ## 🛠️ Technologies & Components
 
 ### HTML5
+
 - **Semantic Elements**: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`
 - **Accessibility**: ARIA labels, semantic markup
 - **SEO Optimized**: Meta tags, structured content
 
 ### CSS3
+
 - **Layout Techniques**:
   - CSS Grid for post layout
   - Flexbox for navigation and components
@@ -41,6 +45,7 @@ A modern, fully-responsive blog website built with HTML, CSS, and JavaScript. Fe
   - Responsive images
 
 ### JavaScript (ES6+)
+
 - **Event Handling**: Click, submit, and input events
 - **DOM Manipulation**: Dynamic content updates
 - **LocalStorage API**: Persistent comment storage
@@ -61,6 +66,7 @@ project1/
 ## 🎯 Key Components
 
 ### 1. Navigation System
+
 ```javascript
 // Features:
 - Smooth scrolling to sections
@@ -70,6 +76,7 @@ project1/
 ```
 
 ### 2. Comment System
+
 ```javascript
 // Features:
 - Add comments with name and text
@@ -81,6 +88,7 @@ project1/
 ```
 
 ### 3. Search Feature
+
 ```javascript
 // Features:
 - Real-time search as you type
@@ -91,6 +99,7 @@ project1/
 ```
 
 ### 4. Social Sharing
+
 ```javascript
 // Features:
 - Share to Twitter with hashtags
@@ -105,10 +114,11 @@ project1/
 ### Quick Start
 
 1. **Open the Website**:
+
    ```bash
    # Navigate to project1 folder
    cd project1
-   
+
    # Open index.html in your browser
    open index.html  # macOS
    start index.html # Windows
@@ -122,11 +132,13 @@ project1/
 ### Features Guide
 
 #### Reading Posts
+
 - Scroll through the page to read all three blog posts
 - Click navigation links to jump to specific sections
 - Use the search bar to find posts by keywords
 
 #### Adding Comments
+
 1. Scroll to any blog post
 2. Enter your name in the "Name" field
 3. Type your comment in the "Comment" field
@@ -134,12 +146,14 @@ project1/
 5. Your comment will appear immediately and persist on reload
 
 #### Using Search
+
 1. Click the search icon or input field in the navigation
 2. Type keywords (e.g., "JavaScript", "CSS", "responsive")
 3. Posts will filter in real-time
 4. Clear search to show all posts again
 
 #### Sharing Posts
+
 1. Scroll to any blog post
 2. Click the social media icon (Twitter, Facebook, LinkedIn)
 3. A new window will open with pre-filled share content
@@ -147,49 +161,55 @@ project1/
 ## 🎨 Customization
 
 ### Changing Colors
+
 Edit the CSS variables in `styles.css`:
+
 ```css
 :root {
-    --primary-color: #2563eb;    /* Main blue color */
-    --accent-color: #f59e0b;     /* Orange accent */
-    --text-color: #1f2937;       /* Dark text */
-    --bg-color: #ffffff;         /* Background */
+  --primary-color: #2563eb; /* Main blue color */
+  --accent-color: #f59e0b; /* Orange accent */
+  --text-color: #1f2937; /* Dark text */
+  --bg-color: #ffffff; /* Background */
 }
 ```
 
 ### Adding New Posts
+
 In `index.html`, copy this structure:
+
 ```html
 <article class="post" id="post-4">
-    <h2 class="post-title">Your Post Title</h2>
-    <div class="post-meta">
-        <span class="post-date">January 25, 2026</span>
-        <span class="post-author">By Author Name</span>
-        <span class="post-category">Category</span>
-    </div>
-    <img src="your-image.jpg" alt="Description" class="post-image">
-    <p class="post-excerpt">Your excerpt...</p>
-    <!-- Add more content -->
+  <h2 class="post-title">Your Post Title</h2>
+  <div class="post-meta">
+    <span class="post-date">January 25, 2026</span>
+    <span class="post-author">By Author Name</span>
+    <span class="post-category">Category</span>
+  </div>
+  <img src="your-image.jpg" alt="Description" class="post-image" />
+  <p class="post-excerpt">Your excerpt...</p>
+  <!-- Add more content -->
 </article>
 ```
 
 ### Modifying Search Behavior
+
 In `script.js`, adjust the search function:
+
 ```javascript
 function initSearch() {
-    // Customize search logic here
-    // Current: searches title, tags, and content
+  // Customize search logic here
+  // Current: searches title, tags, and content
 }
 ```
 
 ## 📱 Responsive Breakpoints
 
-| Device | Width | Layout Changes |
-|--------|-------|----------------|
-| Desktop | > 1400px | Full width, multi-column |
-| Laptop | 769px - 1400px | Standard layout |
-| Tablet | 481px - 768px | Adjusted spacing, stacked elements |
-| Mobile | < 480px | Single column, hamburger menu |
+| Device  | Width          | Layout Changes                     |
+| ------- | -------------- | ---------------------------------- |
+| Desktop | > 1400px       | Full width, multi-column           |
+| Laptop  | 769px - 1400px | Standard layout                    |
+| Tablet  | 481px - 768px  | Adjusted spacing, stacked elements |
+| Mobile  | < 480px        | Single column, hamburger menu      |
 
 ## 🔧 Browser Compatibility
 
@@ -202,6 +222,7 @@ function initSearch() {
 ## 💾 Data Storage
 
 ### LocalStorage Structure
+
 ```javascript
 // Comments are stored per post:
 {
@@ -240,6 +261,7 @@ function initSearch() {
 ## 🎓 Learning Concepts
 
 This project demonstrates:
+
 - Semantic HTML structure
 - CSS Grid and Flexbox layouts
 - Responsive design patterns
@@ -254,16 +276,19 @@ This project demonstrates:
 ### Option 1: Deploy via Vercel CLI
 
 1. **Install Vercel CLI** (if not already installed):
+
    ```bash
    npm install -g vercel
    ```
 
 2. **Navigate to project folder**:
+
    ```bash
    cd project1
    ```
 
 3. **Deploy**:
+
    ```bash
    vercel
    ```
@@ -288,6 +313,7 @@ This project demonstrates:
 ### Option 3: Deploy via GitHub Integration
 
 1. **Push your code** to GitHub:
+
    ```bash
    git add .
    git commit -m "feat: prepare blog for deployment"
@@ -308,6 +334,7 @@ This project demonstrates:
 ### Vercel Configuration
 
 The `vercel.json` file is already configured:
+
 ```json
 {
   "version": 2,
@@ -332,6 +359,7 @@ The `vercel.json` file is already configured:
 ### Environment Variables
 
 If you need to add environment variables:
+
 1. Go to Project Settings → Environment Variables
 2. Add your variables
 3. Redeploy the project
@@ -347,6 +375,7 @@ If you need to add environment variables:
 ## 🚀 Future Enhancements
 
 Potential additions:
+
 - Backend integration for real comments
 - User authentication
 - Post categories and tags

@@ -5,6 +5,7 @@ A modern, fully-featured image slider (carousel) built with vanilla HTML, CSS, a
 ## 🚀 Features
 
 ### Core Functionality
+
 - **6 High-Quality Images**: Beautiful landscape photos from Unsplash
 - **Automatic Slideshow**: Configurable auto-play with adjustable speed
 - **Manual Navigation**: Previous/Next buttons with smooth transitions
@@ -19,6 +20,7 @@ A modern, fully-featured image slider (carousel) built with vanilla HTML, CSS, a
 ## 🛠️ Technologies & Components
 
 ### HTML5
+
 - **Semantic Structure**: Clear and organized markup
 - **SVG Icons**: Scalable vector graphics for buttons
 - **Range Input**: HTML5 slider for speed control
@@ -26,6 +28,7 @@ A modern, fully-featured image slider (carousel) built with vanilla HTML, CSS, a
 - **Accessibility**: ARIA labels and semantic elements
 
 ### CSS3
+
 - **Layout Techniques**:
   - Flexbox for component alignment
   - CSS Grid for thumbnail gallery
@@ -47,6 +50,7 @@ A modern, fully-featured image slider (carousel) built with vanilla HTML, CSS, a
   - Touch-friendly buttons
 
 ### JavaScript (ES6+)
+
 - **Core Features**:
   - `DOMContentLoaded` initialization
   - `setInterval` for automatic slideshow
@@ -75,6 +79,7 @@ project3/
 ## 🎯 Key Components
 
 ### 1. Slide Navigation System
+
 ```javascript
 // Features:
 - currentSlide index tracking
@@ -85,6 +90,7 @@ project3/
 ```
 
 ### 2. Automatic Slideshow
+
 ```javascript
 // Components:
 - setInterval-based timing
@@ -95,6 +101,7 @@ project3/
 ```
 
 ### 3. Thumbnail Gallery
+
 ```javascript
 // Features:
 - 6 thumbnail images
@@ -105,6 +112,7 @@ project3/
 ```
 
 ### 4. Dot Indicators
+
 ```javascript
 // Features:
 - Visual progress dots
@@ -115,6 +123,7 @@ project3/
 ```
 
 ### 5. Control Panel
+
 ```javascript
 // Components:
 - Play/Pause button with icon toggle
@@ -129,10 +138,11 @@ project3/
 ### Quick Start
 
 1. **Open the Slider**:
+
    ```bash
    # Navigate to project3 folder
    cd project3
-   
+
    # Open index.html in your browser
    open index.html  # macOS
    start index.html # Windows
@@ -146,31 +156,37 @@ project3/
 ### Navigation Methods
 
 #### 1. Automatic Slideshow
+
 - Click **Play** button to start automatic slideshow
 - Images transition every 3 seconds (default)
 - Click **Pause** to stop automatic progression
 
 #### 2. Navigation Buttons
+
 - Click **◀** (Previous) to go to previous slide
 - Click **▶** (Next) to go to next slide
 - Buttons work even when slideshow is playing
 
 #### 3. Thumbnail Gallery
+
 - Click any thumbnail image to jump directly to that slide
 - Active thumbnail is highlighted with a border
 - Thumbnails scroll into view automatically
 
 #### 4. Dot Indicators
+
 - Click any dot below the slider to navigate
 - Active dot is highlighted and wider
 - Provides visual progress through slides
 
 #### 5. Keyboard Controls
+
 - **Right Arrow** (→): Next slide
 - **Left Arrow** (←): Previous slide
 - **Spacebar**: Toggle play/pause
 
 #### 6. Speed Control
+
 - Drag the speed slider to adjust transition speed
 - Range: 1 second (fast) to 5 seconds (slow)
 - Current speed displayed next to slider
@@ -181,87 +197,93 @@ project3/
 ### Adding Your Own Images
 
 Replace image URLs in `index.html`:
+
 ```html
 <div class="slide active">
-    <img src="your-image-1.jpg" 
-         alt="Your description" 
-         loading="lazy">
+  <img src="your-image-1.jpg" alt="Your description" loading="lazy" />
 </div>
 ```
 
 Update thumbnails too:
+
 ```html
-<img src="your-image-1.jpg" 
-     alt="Your description" 
-     data-index="0">
+<img src="your-image-1.jpg" alt="Your description" data-index="0" />
 ```
 
 ### Changing Slide Dimensions
 
 Edit in `styles.css`:
+
 ```css
 .slider-container {
-    height: 500px;  /* Change height */
+  height: 500px; /* Change height */
 }
 
 .slide img {
-    width: 100%;    /* Adjust width */
-    height: 100%;   /* Adjust height */
-    object-fit: cover; /* or 'contain' */
+  width: 100%; /* Adjust width */
+  height: 100%; /* Adjust height */
+  object-fit: cover; /* or 'contain' */
 }
 ```
 
 ### Customizing Colors
 
 Update CSS variables:
+
 ```css
 :root {
-    --primary-color: #2563eb;    /* Button color */
-    --accent-color: #f59e0b;     /* Active states */
-    --overlay-color: rgba(0, 0, 0, 0.7);
+  --primary-color: #2563eb; /* Button color */
+  --accent-color: #f59e0b; /* Active states */
+  --overlay-color: rgba(0, 0, 0, 0.7);
 }
 ```
 
 ### Adjusting Transition Speed
 
 In `styles.css`:
+
 ```css
 .slide {
-    transition: opacity 0.8s ease,    /* Fade speed */
-                transform 0.8s ease;   /* Transform speed */
+  transition:
+    opacity 0.8s ease,
+    /* Fade speed */ transform 0.8s ease; /* Transform speed */
 }
 ```
 
 ### Modifying Auto-play Behavior
 
 In `script.js`:
+
 ```javascript
 // Change default speed
-let slideSpeed = 3000;  // milliseconds (3 seconds)
+let slideSpeed = 3000; // milliseconds (3 seconds)
 
 // Auto-start slideshow on load
-document.addEventListener('DOMContentLoaded', function() {
-    initSlider();
-    setupEventListeners();
-    startAutoPlay();  // Add this line
+document.addEventListener("DOMContentLoaded", function () {
+  initSlider();
+  setupEventListeners();
+  startAutoPlay(); // Add this line
 });
 ```
 
 ## 📱 Responsive Breakpoints
 
 ### Desktop (> 768px)
+
 - Slider height: 500px
 - Full navigation controls
 - Large thumbnails (150px)
 - All features visible
 
 ### Tablet (768px)
+
 - Slider height: 300px
 - Smaller navigation buttons
 - Medium thumbnails (100px)
 - Compact controls
 
 ### Mobile (< 480px)
+
 - Slider height: 250px
 - Touch-friendly buttons
 - Small thumbnails (80px)
@@ -271,49 +293,53 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 🎬 Animation Details
 
 ### Slide Transitions
+
 ```css
 /* Fade effect */
 .slide {
-    opacity: 0;
-    transition: opacity 0.8s ease;
+  opacity: 0;
+  transition: opacity 0.8s ease;
 }
 
 .slide.active {
-    opacity: 1;
+  opacity: 1;
 }
 ```
 
 ### Control Animations
+
 ```css
 /* Button hover */
 .nav-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Dot expansion */
 .dot.active {
-    width: 30px;  /* Expands from 12px */
+  width: 30px; /* Expands from 12px */
 }
 ```
 
 ### Entrance Animations
+
 ```css
 @keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 ```
 
 ## ⚙️ Technical Details
 
 ### Slide Navigation Logic
+
 ```javascript
 // Current slide tracking
 let currentSlide = 0;
@@ -321,44 +347,46 @@ let totalSlides = 6;
 
 // Navigate function
 function navigateSlide(direction) {
-    currentSlide += direction;
-    
-    // Loop logic
-    if (currentSlide >= totalSlides) {
-        currentSlide = 0;  // Go to first
-    } else if (currentSlide < 0) {
-        currentSlide = totalSlides - 1;  // Go to last
-    }
-    
-    showSlide(currentSlide);
+  currentSlide += direction;
+
+  // Loop logic
+  if (currentSlide >= totalSlides) {
+    currentSlide = 0; // Go to first
+  } else if (currentSlide < 0) {
+    currentSlide = totalSlides - 1; // Go to last
+  }
+
+  showSlide(currentSlide);
 }
 ```
 
 ### Auto-play Implementation
+
 ```javascript
 let autoPlayInterval = null;
 let isPlaying = false;
 
 function startAutoPlay() {
-    isPlaying = true;
-    autoPlayInterval = setInterval(() => {
-        navigateSlide(1);  // Go to next slide
-    }, slideSpeed);
+  isPlaying = true;
+  autoPlayInterval = setInterval(() => {
+    navigateSlide(1); // Go to next slide
+  }, slideSpeed);
 }
 
 function stopAutoPlay() {
-    isPlaying = false;
-    clearInterval(autoPlayInterval);
+  isPlaying = false;
+  clearInterval(autoPlayInterval);
 }
 ```
 
 ### Visibility Detection
+
 ```javascript
 // Pause when tab is hidden
-window.addEventListener('visibilitychange', function() {
-    if (document.hidden && isPlaying) {
-        stopAutoPlay();
-    }
+window.addEventListener("visibilitychange", function () {
+  if (document.hidden && isPlaying) {
+    stopAutoPlay();
+  }
 });
 ```
 
@@ -371,6 +399,7 @@ window.addEventListener('visibilitychange', function() {
 - ✅ Mobile browsers (iOS 14+, Android Chrome)
 
 ### Required Features
+
 - ES6 JavaScript
 - CSS transitions
 - CSS Grid
@@ -381,6 +410,7 @@ window.addEventListener('visibilitychange', function() {
 ## 🎯 Use Cases
 
 Perfect for:
+
 - Portfolio image galleries
 - Product showcases
 - Photo albums
@@ -393,6 +423,7 @@ Perfect for:
 ## 📊 Image Sources
 
 Current images from Unsplash:
+
 1. Mountain landscape
 2. Forest path
 3. Ocean waves
@@ -401,6 +432,7 @@ Current images from Unsplash:
 6. Valley sunset
 
 Replace with your own images or use:
+
 - **Unsplash**: https://unsplash.com
 - **Pexels**: https://pexels.com
 - **Pixabay**: https://pixabay.com
@@ -425,6 +457,7 @@ Replace with your own images or use:
 ## 🎓 Learning Concepts
 
 This project demonstrates:
+
 - Image carousel implementation
 - CSS transitions and animations
 - JavaScript timing functions (setInterval)
@@ -440,16 +473,19 @@ This project demonstrates:
 ### Option 1: Deploy via Vercel CLI
 
 1. **Install Vercel CLI** (if not already installed):
+
    ```bash
    npm install -g vercel
    ```
 
 2. **Navigate to project folder**:
+
    ```bash
    cd project3
    ```
 
 3. **Deploy**:
+
    ```bash
    vercel
    ```
@@ -474,6 +510,7 @@ This project demonstrates:
 ### Option 3: Deploy via GitHub Integration
 
 1. **Push your code** to GitHub:
+
    ```bash
    git add .
    git commit -m "feat: prepare image slider for deployment"
@@ -494,6 +531,7 @@ This project demonstrates:
 ### Vercel Configuration
 
 The `vercel.json` file is already configured:
+
 ```json
 {
   "version": 2,
@@ -533,6 +571,7 @@ The `vercel.json` file is already configured:
 ## 🚀 Future Enhancements
 
 Potential additions:
+
 - Swipe gestures for mobile
 - Zoom functionality
 - Lightbox integration
@@ -549,21 +588,25 @@ Potential additions:
 ## 🐛 Troubleshooting
 
 ### Images Not Loading
+
 - Check image URLs are correct
 - Verify internet connection (for Unsplash)
 - Replace with local images if needed
 
 ### Slideshow Not Auto-playing
+
 - Click the Play button
 - Check browser allows JavaScript
 - Verify tab is active
 
 ### Keyboard Navigation Not Working
+
 - Click on the slider first (focus)
 - Check browser allows keyboard events
 - Ensure no modal or overlay blocking
 
 ### Buttons Not Responding
+
 - Clear browser cache
 - Check JavaScript console for errors
 - Refresh the page
